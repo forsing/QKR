@@ -1,55 +1,37 @@
-# https://qiskit-community.github.io/qiskit-machine-learning/tutorials/01_neural_networks.html
-
-# https://github.com/qiskit-community/qiskit-machine-learning?tab=readme-ov-file
-
-# https://github.com/Qiskit/textbook/tree/main/notebooks/quantum-machine-learning#
-
-
-
-""" 
-https://qiskit-community.github.io/qiskit-machine-learning/tutorials/
-
-https://github.com/qiskit-community
-
-
-https://github.com/qiskit-community/qiskit-machine-learning/blob/stable/0.8/docs/tutorials/01_neural_networks.ipynb
-
-https://github.com/qiskit-community/qiskit-machine-learning/blob/stable/0.8/docs/tutorials/02_neural_network_classifier_and_regressor.ipynb
-
-https://github.com/qiskit-community/qiskit-machine-learning/blob/stable/0.8/docs/tutorials/02a_training_a_quantum_model_on_a_real_dataset.ipynb
-
-
+import warnings
+warnings.filterwarnings("ignore", message="No gradient function provided")
 
 """
-
-
-
-
-
-### https://qiskit-community.github.io/qiskit-machine-learning/tutorials/03_quantum_kernel.html
-
-
-### https://github.com/qiskit-community/qiskit-machine-learning/blob/stable/0.8/docs/tutorials/03_quantum_kernel.ipynb
-
-
-
-
-
-
-
-"""
-https://qiskit-community.github.io/qiskit-machine-learning/tutorials/03_quantum_kernel.html
-
-https://github.com/qiskit-community/qiskit-machine-learning/blob/main/docs/tutorials/03_quantum_kernel.ipynb
-
+KR (Kernel Regressor)
 """
 
+"""
+| Paket                       | Verzija |
+| --------------------------- | ------- |
+| **python**                  | 3.11.13 |
+| **qiskit**                  | 1.4.4   |
+| **qiskit-machine-learning** | 0.8.3   |
+| **qiskit-ibm-runtime**      | 0.43.0  |
+| **macOS**                   | Tahos   |
+| **Apple**                   | M1      |
+"""
 
+"""
+https://github.com/forsing
+https://github.com/forsing?tab=repositories
+"""
 
+"""
+Loto Skraceni Sistemi
+https://www.lotoss.info
+ABBREVIATED LOTTO SYSTEMS
+"""
 
+"""
+svih 4510 izvlacenja
+30.07.1985.- 11.11.2025.
+"""
 
-
-# KR (Kernel Regressor)
 
 import pandas as pd
 import numpy as np
@@ -150,17 +132,17 @@ Predikcija za broj 2: 9
 --- Quantum Kernel Regression za broj 3 ---
 Računam kernel matricu...
 Trening za broj 3: 100%|███████████████████████| 1/1 [00:00<00:00, 2364.32it/s]
-Predikcija za broj 3: 13
+Predikcija za broj 3: x
 
 --- Quantum Kernel Regression za broj 4 ---
 Računam kernel matricu...
 Trening za broj 4: 100%|███████████████████████| 1/1 [00:00<00:00, 2325.00it/s]
-Predikcija za broj 4: 21
+Predikcija za broj 4: x
 
 --- Quantum Kernel Regression za broj 5 ---
 Računam kernel matricu...
 Trening za broj 5: 100%|███████████████████████| 1/1 [00:00<00:00, 2457.12it/s]
-Predikcija za broj 5: 27
+Predikcija za broj 5: x
 
 --- Quantum Kernel Regression za broj 6 ---
 Računam kernel matricu...
@@ -181,38 +163,5 @@ print()
 N = 100
 
 === Predviđena sledeća loto kombinacija (7) ===
-4 9 13 21 27 35 37
-"""
-
-
-
-
-
-
-"""
-cisti kesh
-
-pip cache purge
-
-"""
-
-
-"""
-Obriši cache
-Na Mac/Linux:
-rm -rf ~/.cache/pip
-"""
-
-
-"""
-=== Qiskit Version Table ===
-Software                       Version        
----------------------------------------------
-qiskit                         1.4.4          
-qiskit_machine_learning        0.8.3          
-
-=== System Information ===
-Python version                 3.11.13        
-OS                             Darwin         
-Time                           Tue Sep 09 18:11:49 2025 CEST
+4 9 x x x 35 37
 """
