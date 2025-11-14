@@ -53,20 +53,20 @@ random.seed(SEED)
 # =========================
 # Učitavanje CSV
 # =========================
-csv_path = '/Users/milan/Desktop/GHQ/data/loto7_4510_k89.csv'
+csv_path = '/data/loto7_4510_k89.csv'
 df = pd.read_csv(csv_path, header=None)
 
 
 # =========================
-# 2. Koristimo samo zadnjih N=100 za test
+# Koristimo samo zadnjih N=100 za test
 # =========================
 N = 100
-# N = 4510
+# N = 4510 # sve
 
 df = df.tail(N).reset_index(drop=True)
 
 
-# 3. Priprema podataka
+# Priprema podataka
 X = df.iloc[:, :-1].values   # prvih 6 brojeva
 y_full = df.values           # svih 7 brojeva (6+1)
 
@@ -79,10 +79,10 @@ X_scaled = scaler_X.fit_transform(X).astype(np.float64)
 predicted_combination = []
 
 # =========================
-# QKR treniranje po brojevima
+# KR treniranje po brojevima
 # =========================
 print()
-for i in range(7):  # 7
+for i in range(7):  
     print(f"\n--- Quantum Kernel Regression za broj {i+1} ---")
     y = y_full[:, i].astype(np.float64)
     scaler_y = MinMaxScaler()
@@ -160,7 +160,7 @@ print("\n=== Predviđena sledeća loto kombinacija (7) ===")
 print(" ".join(str(num) for num in predicted_combination))
 print()
 """
-N = 100
+N = 100 # zadnjih 100
 
 === Predviđena sledeća loto kombinacija (7) ===
 4 9 x x x 35 37
