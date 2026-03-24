@@ -57,7 +57,7 @@ algorithm_globals.random_seed = SEED
 # =========================
 # Učitaj CSV
 # =========================
-df = pd.read_csv("/Users/4c/Desktop/GHQ/data/loto7_4584_k23.csv", header=None).iloc[:, :7]
+df = pd.read_csv("/data/loto7_4584_k23.csv", header=None).iloc[:, :7]
 min_val = [1,2,3,4,5,6,7]
 max_val = [33,34,35,36,37,38,39]
 
@@ -195,5 +195,5 @@ python3 QKR_qc25_7_v2.py --no-plot
 
 
 === QKR Predviđena loto kombinacija (7) ===
-12 13 18 30 25 15 23
+12 x 18 30 y 15 z
 """
